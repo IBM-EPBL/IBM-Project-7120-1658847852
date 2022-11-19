@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}"/>
+</head>
+
+<body>
+    <h1>  <a href="login.html" style="justify-content: center;color: black; font-size: 30px; font-family: Consolas, monaco, monospace; font-size: 24px; font-style: normal; font-variant: normal; font-size: 1.1875rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: darkred;
+    background-color: #5ca8f0;
+    border-radius: 0.625rem;
+    -webkit-border-radius: 0.625rem;
+    -moz-border-radius: 0.625rem;
+    padding: 0.3rem 0.4rem;
+    border-style: solid;
+    border-width: 0rem;
+    border-color: #EF2D56;
+    -webkit-box-shadow: 5px 7px 8px -1px rgba(51,51,51,0.51);
+    -moz-box-shadow: 5px 7px 8px -1px rgba(51,51,51,0.51);
+    -box-shadow: 5px 7px 8px -1px rgba(51,51,51,0.51);"><b>Login</b></a></h1>
+
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}<br><br><br>
+        {{ form.username }}<br><br><br>
+        {{ form.password }}<br><br><br><br>
+        {{ form.submit }}<br><br>
+
+        
+
+        <a href="{{ url_for('register') }}" style="color:rgb(253, 0, 0)">Don't have an account? Sign Up</a>
+    
+    <footer id="footer">
+        Made BY <a href="https://github.com/IBM-EPBL/IBM-Project-17508-1659672731"> Team </a>
+        
+    </footer><br /><br /><br />
+
+<style>
+    @media screen and (min-width: 480px) {
+  #form {
+    width:400px;
+  }
+}
+    @-webkit-keyframes animatebottom {
+  0% {
+opacity:0;
+    margin-top:500px;
+}
+
+
+
+100% {
+opacity:1;
+    margin-top:0px;
+}
+}
+
+@keyframes animatebottom { 
+  0% {
+opacity:0;
+    margin-top:500px;
+}
+
+
+
+100% {
+opacity:1;
+    margin-top:0px;
+}
+}
+        input{
+        color: #888;margin:5px;
+            border-radius: 0px;
+    border: 0px solid #eee;
+    padding: 5px;
+    background: #eee;
+    transition-duration:.5s;
+        }
+        Input:Focus{
+            border-radius:50px;
+            background-color: #ccc;
+            color:#fff;
+        }
+        a{
+    text-decoration:none!important;
+    color:#fff;
+}
+        hr {
+    border: 2px solid #c1c1c1;
+}
+        button{
+            cursor: hand;
+            border: none;
+    background: #27a5df;
+    color: rgb(5, 235, 128);
+    padding: 11px 26px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition-duration:.1s;
+        }
+        Button:active{
+            background-color: #555;
+            
+        }
+        *{
+            outline: none;
+            user-select: none;
+        }
+        H1{
+            width:100%;
+            color: #888;
+        }
+        #form{
+        outline:15px solid #4bbaed;
+        margin: 20px;
+        border-radius: 10px;
+    text-align: -webkit-center;
+    border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+    box-shadow: -1px 1px 20px rgba(0, 0, 0,0.5);
+    Border:none;
+    outline:none;
+    animation:  animatebottom 1s cubic-bezier(1, -0.06, 0.26, 1.06);
+        }
+        body{
+         -webkit-user-select:none;
+   -moz-user-select: none;
+   -ms-user-select: none; 
+    user-select: none;
+    
+  /* Changed background - August 2020 */ background-image:url("https://media.istockphoto.com/id/671712984/photo/farmer-hand-giving-chemical-fertilizer-to-young-tree.jpg?b=1&s=170667a&w=0&k=20&c=s-EAOkrzFDc79llmtxz_r9IEbJRy5w_HVb8oGkxalBI=");
+  
+    background-attachment: fixed;
+    background-position: ;top
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:1s;
+
+            top:20px;
+            padding: 100px;
+            margin:0;
+            color: #888;
+            font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+            text-align: -webkit-center;
+            
+        }
+        
+        /* Changed footer - August 2020 */
+        footer{
+            padding:15px 15px;
+            width: 80%;
+            position: fixed;
+            bottom: 2%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #fff;
+            text-align:-webkit-center;
+            color:#fff!important;
+            border-radius: 50px;
+            color: #fff;
+            background-color: rgba(255,255,255,0.25);
+            
+        }
+header h1{
+width:90%;
+Border: 5px dotted #27a5df;
+    color: #27a5df;
+    text-align:-webkit-center;
+    border-radius:5px;
+}
+</style>
+
+
+   
+
+    <!-- footer -->
+	<footer class="text-center py-5">
+		<div class="container py-md-3">
+			<!-- logo -->
+			<h2 class="logo2 text-center" style="background:-webkit-linear-gradient(#045D5D,black);font-family: Verdana">Fertilizer Recommentation System for Disease Prediction</h2><br><br>
+			<!-- //logo -->
+			<!-- address -->
+			<div class="contact-left-footer mt-4">
+
+
+
+
+
+				<!-- <a href="community.html">Community</a> -->
+				
+			</div>
+			
+</body>
+
+</html>
+Footer
